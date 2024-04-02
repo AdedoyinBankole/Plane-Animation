@@ -1,0 +1,42 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+.takeoff{
+    position: relative;
+    bottom: 150px;
+    animation: plan 4s linear infinite;
+    width: 400px;
+    height: 200px;
+    left: -10px;
+
+}
+.container{
+    height: 600px;
+    width: 100%;
+    background-position: center;
+    position: relative;
+    overflow: hidden;
+    background-size: center;
+}
+.roadway{
+    height: 200px;
+    width: 100%;
+    position: absolute;
+    bottom: 5px;
+    left: -10px;
+}
+@keyframes plan {
+  
+    100%{
+        transform: translateX(0px) translateY(0px) rotate(0deg);
+      }
+      25%{
+        transform: translateX(500px) translateY(0px) rotate(0deg);
+      }   
+      100%{
+        transform: translateX(1800px) translateY(-250px) rotate(-25deg);
+      } 
+
+   }
